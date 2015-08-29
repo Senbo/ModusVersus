@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300,300italic,400italic,600italic,700italic,800italic" rel="stylesheet" type="text/css">
+	<link href="media/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="media/css/style.css" rel="stylesheet" type="text/css">
+	<script src="media/js/jquery-1.11.3.min.js"></script>
+	<script src="media/js/jssor.slider.mini.js"></script>
+	<script src="media/js/scripts.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<span>Modus</span>
+				<span>versus</span>
+			</div>
+			<ul class="menu">
+				<li class="active">Home</li>
+				<li>About</li>
+				<li>Services</li>
+				<li>Portfolio</li>
+				<li>Blog</li>
+				<li>Features</li>
+				<li>Contacts</li>
+			</ul>		
+		</div>
+	</header>
+	<div id="slider1_container" style="width: 1500px; height: 500px;">
+		<!-- Slides Container -->
+		<div u="slides" class="slides" style="width: 1500px; height: 500px;">
+			<div>
+				<img u="image" src="media/img/blue.jpg" />
+			</div>
+			<div>
+				<img u="image" src="media/img/purple.jpg" />
+			</div>
+			<div>
+				<img u="image" src="media/img/red.jpg" />
+			</div>
+        </div>
+
+		<span u="arrowleft" class="arrowleft">
+			<i class="fa fa-angle-double-left"></i>
+		</span>
+		<span u="arrowright" class="arrowright">
+			<i class="fa fa-angle-double-right"></i>
+		</span>
+		<div u="navigator" class="navigator">
+			<!-- bullet navigator item prototype -->
+			<div u="prototype" class="prototype"><div></div></div>
+		</div>		
+	</div>
+	
+	<style>
+	
+		#slider1_container img {width: 100%;}
+            /* jssor slider arrow navigator skin 21 css */
+            /*
+			
+            .jssora21l                  (normal)
+            .jssora21r                  (normal)
+            .jssora21l:hover            (normal mouseover)
+            .jssora21r:hover            (normal mouseover)
+            .jssora21l.jssora21ldn      (mousedown)
+            .jssora21r.jssora21rdn      (mousedown)
+            */
+            .jssora21l, .jssora21r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                background: url(media/img/a21.png) center center no-repeat;
+                overflow: hidden;
+            }
+            .jssora21l { background-position: -3px -33px; }
+            .jssora21r { background-position: -63px -33px; }
+            .jssora21l:hover { background-position: -123px -33px; }
+            .jssora21r:hover { background-position: -183px -33px; }
+            .jssora21l.jssora21ldn { background-position: -243px -33px; }
+            .jssora21r.jssora21rdn { background-position: -303px -33px; }
+			
+			/* jssor slider bullet navigator skin 21 css */
+            /*
+            .jssorb21 div           (normal)
+            .jssorb21 div:hover     (normal mouseover)
+            .jssorb21 .av           (active)
+            .jssorb21 .av:hover     (active mouseover)
+            .jssorb21 .dn           (mousedown)
+            */
+            .jssorb21 {
+                position: absolute;
+            }
+            .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 19px;
+                height: 19px;
+                text-align: center;
+                line-height: 19px;
+                color: white;
+                font-size: 12px;
+                background: url(media/img/b21.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb21 div { background-position: -5px -5px; }
+            .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+            .jssorb21 .av { background-position: -65px -5px; }
+            .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+
+        </style>
+
+	
+</body>
+</html>
